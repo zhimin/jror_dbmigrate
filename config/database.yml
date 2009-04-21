@@ -3,8 +3,8 @@ development:
   adapter: jdbcmysql
   encoding: utf8
   database: agileway_development
-  username: agileway
-  password: iTest2
+  username: root
+  password: 
 
 mysql:
   adapter: jdbcmysql
