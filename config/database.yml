@@ -1,0 +1,30 @@
+# HSQL in-process mode, the database is stored in a local file
+development:
+  adapter: jdbcmysql
+  encoding: utf8
+  database: agileway_development
+  username: agileway
+  password: iTest2
+
+mysql:
+  adapter: jdbcmysql
+  database: agileway_test
+  host: 172.19.3.2
+  username: agileway
+  password: iTest2
+
+# HSQL Server mode
+standalone:
+  adapter: jdbchsqldb
+  database: db/agileway_standalone
+  username: sa
+  password:
+  encoding: utf8
+  timeout: 5000
+
+sqlserver:
+  adapter: jdbc
+  url: jdbc:jtds:sqlserver://sqlserver:1433/agileway_iteration
+  driver: net.sourceforge.jtds.jdbc.Driver
+  username: agileway
+  password: iTest2
